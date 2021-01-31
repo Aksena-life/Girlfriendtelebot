@@ -3,7 +3,7 @@ import random
 # Подключаем модуль для Телеграма
 import telebot
 # Указываем токен
-bot = telebot.TeleBot('1522814874:AAEpTYexE4i0byojjwXPJkS7Qusw1uQ2Alk')
+bot = telebot.TeleBot('1487122552:AAGF8UugtdUTZbylEt8Mjo_n76JHdSJn1gY')
 # Импортируем типы из модуля, чтобы создавать кнопки
 from telebot import types
 # Заготовки для трёх предложений
@@ -63,3 +63,4 @@ def callback_worker(call):
         bot.send_message(call.message.chat.id, msg)
 # Запускаем постоянный опрос бота в Телеграме
 bot.polling(none_stop=True, interval=0)
+bot.polling(none_stop=True)
